@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        
+        nav {
+            background: #003566;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 18px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd60a;
+        }
+
+        section {
+            padding: 80px 30px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #003566;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .home-img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px; 
+            margin-top: 20px;
+            box-shadow: 0 0 10px
+        rgba(0,0,0,0.2);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background: #003566;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #001d3d;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #003566;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #003566;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #001d3d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="container">
+            <h1><marquee>!Welcome to My Portfolio!</marquee></h1>
+            <div class="photo">
+             <img src="myphoto.jpg" alt="My image" 
+           class="home-img">
+          </div> 
+            <p>Hello!</br>
+              My Self Aware Tanuja.</br> 
+              I am an Electrical Engineering First-Year Student.
+              I am passionate about learning basic electrical concepts, circuits, and new technology.</p>
+           <p>This website includes my education details, skills, resume, and contact information.  
+              Feel free to explore!</p>
+           <p><b>“Learning today, leading tomorrow.”</b></p>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <div class="container">
+           <h1>About Me</h1>
+           <p>
+             Hello! I am a First Year Electrical Engineering student studying at (Your College Name).
+            I am passionate about learning basic electrical concepts, circuits, wiring systems, 
+            and renewable energy technology.
+       </p>
+
+           <p>
+            I am a quick learner, hardworking and dedicated towards my studies. 
+            I always try to improve my knowledge and learn new skills related to the electrical field.
+       </p>
+
+           <p>
+            My goal is to build a strong foundation in electrical engineering and
+            become a successful engineer in the future.
+       </p>
+
+           <p>
+            In my free time, I enjoy reading, listening to music and exploring new technology.
+       </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="container">
+            <h1>My Education</h1>
+
+            <h2>?? Current Education</h2>
+            <p><b>Course:</b> First Year Electrical Engineering</p>
+            <p><b>College Name:</b>Sanjivani Collage Of Engineering, Kopergaon </p>
+            <p><b>Year:</b> 2025–2026</p>
+
+            <hr>
+
+            <h2>?? 12th Education</h2>
+            <p><b>College:</b> K.T.H.M.College, Nashik</p>
+            <p><b>Percentage:</b> 63.83 %</p>
+            <p><b>Year:</b> 2024-2025</p>
+            <hr>
+
+            <h2>?? 10th Education</h2>
+            <p><b>School:</b> New English School, Chandori</p>
+            <p><b>Percentage:</b> 84.44 %</p>
+            <p><b>Year:</b> 2022-2023</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h1>My Skills</h1>
+            <ul>
+                <li>Basic Electrical Knowledge</li>
+                <li>Basic Circuit Understanding</li>
+                <li>Multimeter Handling</li>
+                <li>MS Word / MS PowerPoint</li>
+                <li>Teamwork</li>
+                <li>Communication Skills</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <div class="container">
+            <h1>My Resume</h1>
+            <p>You can download my updated resume using the button below:</p>
+            <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+
+            </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+
+            <form>
+                <label>Your Name</label>
+                <input type="text" placeholder="Your Name">
+
+                <label>Your Email</label>
+                <input type="email" placeholder="Your Email">
+               
+                <label>Message</label>
+                <textarea rows="5" placeholder="Write your message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+             </form>
+        </div>
+    </section>
+
+</body>
+</html>
